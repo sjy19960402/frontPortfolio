@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* font: noto-sans, Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Noto+Sans+KR:wght@400;500&display=swap');
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  color: #222;
+  overflow-x: hidden;
+}
+
+section h2{
+  display: none;
+}
+
+a{
+  color: #222;
+  text-decoration: none;
+}
+
+.d-none{
+  display: none;
+}
+
+/* 푸터 */
+footer{
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.8rem;
+}
+footer address{
+  font-style: normal;
+}
