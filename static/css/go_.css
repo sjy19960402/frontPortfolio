@@ -37,6 +37,6 @@ main > article h2{
 }
 main > article img{
     width: 100%;
-    filter: drop-shadow(3px 3px 4px #333);
+    filter: drop-shadow(3px 3px 4px rgb(170, 170, 170));
 }
 main > article:last-of-type h2{text-align: right;}
