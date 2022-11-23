@@ -184,7 +184,7 @@ header .logo-box img{
   cursor: pointer;
 }
 .right-text-detail .down .down-light{
-  background: linear-gradient(to top, #daebfd 40%, transparent 40%);
+  background: linear-gradient(to top, #91c6ff 40%, transparent 40%);
 }
 .right-text .right-text-detail .down i {
   font-weight: bold;
@@ -253,7 +253,7 @@ section{
 .skill .skill-box .skill-right{
   transform: translate(300px,-30px);
 }
-.skill-box .skill-right span, .card{
+.skill-box .skill-right span, .card, .box-info-detail p span{
   padding: 5px 10px;
   background: #f5f5f5;
   border-radius: 5px;
@@ -299,7 +299,7 @@ section{
 .node .node-box{
   position: absolute;
   top: 100px;
-  width: 50%;
+  width: 60%;
   right: 100px;
   z-index: 100;
 }
@@ -307,7 +307,6 @@ section{
   width: 100%;
   margin: 0 auto;
   object-fit: cover;
-  box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
 }
 .node .node-box p{
   transform: translate(-235px,230px);
@@ -335,16 +334,13 @@ section{
   text-align: right;
 }
 /* node프로젝트 링크 연결 아이콘 */
-.node .node-box .prj-link-icon{
-  text-align: right;
-}
 .node .node-box .prj-link-icon a:first-of-type{
   width: 50px;
-  transform: translate(103px,-108px);
+  transform: translateX(-30px);
 }
 .node .node-box .prj-link-icon a:last-of-type{
-  width: 32px;
-  transform: translateY(-70px);
+  width: 34px;
+  transform: translate(-80px, -6px);
 }
 .node .node-box .prj-link-icon a img{
   width: 100%;
@@ -360,7 +356,7 @@ section{
 }
 .node .node-box .p_btn{
   position: absolute;
-  left: -340px;
+  left: -380px;
   top: 420px;
   color: #91c6ff;
   border: 1px solid #91c6ff;
@@ -374,7 +370,7 @@ section{
 .node .node-box .more{
   position: absolute;
   top: 420px;
-  left: -130px;
+  left: -170px;
   background: linear-gradient(101.83deg, rgb(127, 135, 224) -13.2%, rgb(38, 73, 202) -13.19%, rgb(106, 118, 223) 46.63%, rgb(50, 176, 247) 107.09%);
   box-shadow: rgb(63 152 239 / 20%) 0px 12px 24px;
   color: #fff;
@@ -391,6 +387,59 @@ section{
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
+/* main - nodeProject, d:nema info */
+.detailInfo{
+  width: 100%;
+  position: relative;
+}
+.detailInfo .box{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.detailInfo .box .box-info-detail{
+  position: absolute;
+}
+.detailInfo .box .box-info-detail{
+  font-size: 1rem;
+}
+.detailInfo .box .box-info-detail p:last-of-type{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.detailInfo .box .box-info-detail a{
+  font-weight: bolder;
+  background: linear-gradient(to top, #91c6ff 40%, transparent 40%);
+  padding-right: 18px;
+}
+.detailInfo .box .img{
+  width: 98%;
+  object-fit: cover;
+}
+.detailInfo .node-bg p{
+  position: absolute;
+  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #dbdbdb;
+  font-weight: bolder;
+  z-index: 9999;
+}
+.detailInfo .node-bg p:first-of-type{
+  display: none;
+}
+.detailInfo .node-bg p:nth-of-type(2){
+  left: 85px;
+  top: 540px;
+}
+.detailInfo .node-bg p:nth-of-type(3){
+  left: 760px;
+  top: 160px;
+}
+.detailInfo .node-bg p:last-of-type{
+  left: 760px;
+  top: 520px;
+}
+
 /* main -responsive web */
 .respon-box{
     width: 90%; height: 680px;
@@ -402,7 +451,7 @@ section{
   display: flex;
   margin-top: 30px;
   height: 44px;
-  width: 360px;
+  width: 480px;
   background: #f2f2f2;
   border-radius: 40px;
   padding: 6px;
@@ -435,14 +484,17 @@ section{
 }
 
 /* 탭콘텐츠 : 왼쪽 메인 설명 */
-.c01, .c02, .c03{
+.c01, .c02, .c03, .c04{
     width: 100%;
     margin-top: 100px;
 }
 .c01 img, .c02 img, .c03 img{
   width: 100%;
 }
-
+.c04 img{
+  margin-top: 30px;
+  width: 60%;
+}
 .respon-box .ol_img{
     width: 45%; height: 100%;
     position: absolute;
@@ -623,14 +675,22 @@ section{
   transform: translateY(50px);
 }
 /* c03: casper 사진 위치 조정 */
-.respon-box .c03 .or_img{
+ .or_img{
   transform: translateY(-12px);
 }
 .respon-box strong{
   color: #0099ff;
   font-weight: bolder;
 }
-/* main - clone */
+/* c04: youtube 사진 크기 조정 */
+.c04 .or_img{
+  width: 38%;
+  transform: translate(-100px,-100px);
+}
+.c04 .or_img img{
+  transform: translateY(-30px);
+}
+
 
 /* main - app */
 .a_wrap{
