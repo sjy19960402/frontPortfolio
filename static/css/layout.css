@@ -356,7 +356,7 @@ section{
 }
 .node .node-box .p_btn{
   position: absolute;
-  left: -380px;
+  left: -370px;
   top: 420px;
   color: #91c6ff;
   border: 1px solid #91c6ff;
@@ -690,7 +690,6 @@ section{
 .c04 .or_img img{
   transform: translateY(-30px);
 }
-
 
 /* main - app */
 .a_wrap{
